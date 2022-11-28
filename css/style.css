@@ -21,12 +21,12 @@ body {
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
 
 .section__nav {
-  background-color: lightcoral;
+  background-color: #fab95b;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1; }
 
 .section__header {
-  background-color: green;
+  background-color: #1a3263;
   grid-column: full-start / full-end; }
 
 .section__about-pictures {
@@ -55,4 +55,4 @@ body {
 
 .section__footer {
   background-color: yellow;
-  grid-column: full-start / full-end; }
+  grid-column: sidebar-start / full-end; }
