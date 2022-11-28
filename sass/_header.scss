@@ -1,6 +1,4 @@
 .section__header {
   background-color: green;
-  grid-column: full-start / col-end 6;
-  // grid-row: 1 / 2;
-  // grid-area: 1 / 2 / 2 / 3;
+  grid-column: full-start / full-end;
 }

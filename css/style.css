@@ -18,33 +18,41 @@ body {
 .container {
   display: grid;
   grid-template-rows: 80vh 40vw repeat(4, min-content);
-  grid-template-columns: [sidebar-start] 16rem [sidebar-end full-start] 1fr [full-end]; }
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
 
 .section__nav {
-  background-color: blue;
+  background-color: lightcoral;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1; }
 
 .section__header {
   background-color: green;
-  grid-column: full-start / col-end 6; }
+  grid-column: full-start / full-end; }
 
-.section__about {
+.section__about-pictures {
   background-color: red;
-  grid-area: 2 / 2 / 3 / 3; }
+  grid-column: full-start / col-end 4; }
+
+.section__about-content {
+  background-color: aqua;
+  grid-column: col-end 4 / full-end; }
+
+.section__skills {
+  background-color: lightcyan;
+  grid-column: center-start / center-end; }
 
 .section__my-work {
   background-color: orange;
-  grid-area: 3 / 2 / 4 / 3; }
+  grid-column: center-start / center-end; }
 
 .section__testimonials {
   background-color: gray;
-  grid-area: 4 / 2 / 5 / 3; }
+  grid-column: center-start / center-end; }
 
 .section__contact {
-  background-color: purple;
-  grid-area: 5 / 2 / 6 / 3; }
+  background-color: aqua;
+  grid-column: full-start / full-end; }
 
 .section__footer {
   background-color: yellow;
-  grid-area: 6 / 2 / 7 / 3; }
+  grid-column: full-start / full-end; }
