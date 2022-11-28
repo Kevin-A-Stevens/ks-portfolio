@@ -1,0 +1,44 @@
+// COLOR VARIABLES
+$color-primary: #1a3263;
+$color-secondary: #fab95b;
+$color-primary-light: #485b82;
+$color-secondary-light: #fbc77c;
+$color-primary-dark: #15284f;
+$color-secondary-dark: #c89449;
+
+$color-gray-light-1: #e8e2db;
+$color-gray-light-2: #d1cbc5;
+$color-gray-dark-1: #464442;
+$color-gray-dark-2: #2e2d2c;
+
+// FONT VARIABLES
+$font-primary: "Rubik", sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+
+// BASE STYLES
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px / 16px = 62.5% -> 1rem = 10px
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-gray-dark-1;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh 40vw repeat(4, min-content);
+  grid-template-columns: [sidebar-start] 16rem [sidebar-end full-start] 1fr [full-end];
+}

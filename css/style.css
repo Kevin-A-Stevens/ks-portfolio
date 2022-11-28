@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #464442;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh 40vw repeat(4, min-content);
+  grid-template-columns: [sidebar-start] 16rem [sidebar-end full-start] 1fr [full-end]; }
+
+.section__nav {
+  background-color: blue;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1; }
+
+.section__header {
+  background-color: green;
+  grid-column: full-start / col-end 6; }
+
+.section__about {
+  background-color: red;
+  grid-area: 2 / 2 / 3 / 3; }
+
+.section__my-work {
+  background-color: orange;
+  grid-area: 3 / 2 / 4 / 3; }
+
+.section__testimonials {
+  background-color: gray;
+  grid-area: 4 / 2 / 5 / 3; }
+
+.section__contact {
+  background-color: purple;
+  grid-area: 5 / 2 / 6 / 3; }
+
+.section__footer {
+  background-color: yellow;
+  grid-area: 6 / 2 / 7 / 3; }
