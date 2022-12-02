@@ -24,7 +24,7 @@ body {
   background-color: #fab95b;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
-  padding: 10rem 0 0 1.5rem; }
+  padding-top: 10rem; }
 
 .side-nav {
   font-size: 1.4rem;
@@ -32,7 +32,8 @@ body {
   display: grid; }
 
 .side-nav__item {
-  position: relative; }
+  position: relative;
+  padding-left: 0.75rem; }
 
 .side-nav__item:not(:last-child) {
   margin-bottom: 0.5rem; }
@@ -44,7 +45,8 @@ body {
   left: 0;
   height: 100%;
   width: 3px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(209, 213, 219, 0.3);
   transform: scaleY(0);
   transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s; }
 

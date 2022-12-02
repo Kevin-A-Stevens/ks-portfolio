@@ -3,7 +3,7 @@
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
 
-  padding: 10rem 0 0 1.5rem;
+  padding-top: 10rem;
 }
 
 .side-nav {
@@ -20,6 +20,7 @@
 
 .side-nav__item {
   position: relative;
+  padding-left: 0.75rem;
 }
 
 .side-nav__item:not(:last-child) {
@@ -33,7 +34,8 @@
   left: 0;
   height: 100%;
   width: 3px;
-  background-color: #fff;
+  background-color: $color-transparent;
+  border: 1px solid $color-border;
   transform: scaleY(0);
   transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
     background-color 0.1s;
