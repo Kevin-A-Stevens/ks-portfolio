@@ -20,10 +20,10 @@
   </head>
   <body class="container">
     <!-- Side bar nav -->
-    <nav class="section__nav">
+    <nav id="home" class="section__nav">
       <ul class="side-nav sticky">
         <li class="side-nav__item side-nav__item--active">
-          <a href="#" class="side-nav__link">
+          <a href="#home" class="side-nav__link">
             <!-- <svg class="side-nav__icon">
               <use xlink:href="img/sprite.svg#icon-home" />
             </svg> -->
@@ -75,10 +75,73 @@
             <span>Contact me</span>
           </a>
         </li>
+
+        <li class="side-nav__item">
+          <a href="#" class="side-nav__link">
+            <!-- <svg class="side-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-mail" />
+            </svg> -->
+            <span>Resume</span>
+          </a>
+        </li>
       </ul>
     </nav>
 
-    <header class="section__header">Header</header>
+    <header class="section__header">
+      <div class="header-main">
+        <h1 class="heading-1">Welcome to my page.</h1>
+        <br />
+        <h1 class="heading-1">My name is Kevin.</h1>
+        <h3 class="heading-4">I am a Web Developer living in Nashville.</h3>
+      </div>
+      <div class="header-links">
+        <h4 class="heading-3">You can also find me on</h4>
+
+        <ul class="social__links">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="link__icon">
+                <use xlink:href="img/sprite.svg#icon-linkedin-with-circle" />
+              </svg>
+              <!-- <span>LinkedIn</span> -->
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="link__icon">
+                <use xlink:href="img/sprite.svg#icon-facebook" />
+              </svg>
+              <!-- <span>Facebook</span> -->
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="link__icon">
+                <use xlink:href="img/sprite.svg#icon-mail" />
+              </svg>
+              <!-- <span>Email</span> -->
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="link__icon">
+                <use xlink:href="img/sprite.svg#icon-message" />
+              </svg>
+              <!-- <span>My Blog</span> -->
+            </a>
+          </li>
+        </ul>
+        <div class="text__icons">
+          <span class="text_icon">LinkedIn</span>
+          <span class="text_icon">Facebook</span>
+          <span class="text_icon">Email</span>
+          <span class="text_icon">My Blog</span>
+        </div>
+      </div>
+    </header>
     <section class="section__about-pictures">About pictures</section>
     <section class="section__about-content">About content</section>
     <section class="section__skills">Skills</section>

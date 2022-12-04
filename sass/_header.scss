@@ -1,4 +1,84 @@
 .section__header {
-  background-color: $color-primary;
+  background-color: $color-gray-dark-1;
   grid-column: full-start / full-end;
+  background-image: linear-gradient(
+      rgba($color-primary, 0.93),
+      rgba($color-primary, 0.93)
+    ),
+    url(../img/landing-page.jpg);
+  background-size: cover;
+  background-position: center;
+  // padding: 4rem;
+  // padding-top: 12rem;
+
+  display: grid;
+  grid-row-gap: 0.5rem;
+  text-align: center;
+}
+
+.header-main {
+  padding: 10rem 0;
+}
+
+.heading-4 {
+  margin-top: 4rem;
+}
+
+.social__links {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 16rem -2rem 16rem;
+  list-style: none;
+}
+
+.link__icon {
+  width: 6rem;
+  fill: $color-gray-light-2;
+}
+
+.text__icons {
+  color: $color-gray-light-2;
+
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 16rem 4rem 16rem;
+}
+
+// HOVER ANIMATION
+
+.social__link::before {
+  content: "";
+  position: absolute;
+  top: 5.75rem;
+  left: 0;
+  height: 35%;
+  width: 3px;
+  background-color: $color-transparent;
+  border: 1px solid $color-border;
+  transform: scaleY(0);
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+    background-color 0.1s;
+}
+
+.social__link:hover::before,
+.social__link--active::before {
+  transform: scaleY(1);
+  width: 100%;
+}
+
+.social__link:active::before {
+  background-color: $color-gray-light-1;
+}
+
+.social__link:link,
+.social__link:visited {
+  color: $color-primary;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 1.5rem 0.2rem;
+  position: relative;
+  z-index: 10;
 }
